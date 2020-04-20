@@ -4,6 +4,9 @@
         <path>$WS_DIR$\TivaWare_C_Series-2.1.4.178\driverlib\driverlib.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\TivaWare_C_Series-2.1.4.178\grlib\grlib.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\projects\lab1\lab1.ewp</path>
     </project>
     <batchBuild />

@@ -1,0 +1,213 @@
+#Generating source browse information for project grlib
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build canvas.pbi : index canvas.xcl
+build charmap.pbi : index charmap.xcl
+build checkbox.pbi : index checkbox.xcl
+build circle.pbi : index circle.xcl
+build container.pbi : index container.xcl
+build context.pbi : index context.xcl
+build fontcm12.pbi : index fontcm12.xcl
+build fontcm12b.pbi : index fontcm12b.xcl
+build fontcm12i.pbi : index fontcm12i.xcl
+build fontcm14.pbi : index fontcm14.xcl
+build fontcm14b.pbi : index fontcm14b.xcl
+build fontcm14i.pbi : index fontcm14i.xcl
+build fontcm16.pbi : index fontcm16.xcl
+build fontcm16b.pbi : index fontcm16b.xcl
+build fontcm16i.pbi : index fontcm16i.xcl
+build fontcm18.pbi : index fontcm18.xcl
+build fontcm18b.pbi : index fontcm18b.xcl
+build fontcm18i.pbi : index fontcm18i.xcl
+build fontcm20.pbi : index fontcm20.xcl
+build fontcm20b.pbi : index fontcm20b.xcl
+build fontcm20i.pbi : index fontcm20i.xcl
+build fontcm22.pbi : index fontcm22.xcl
+build fontcm22b.pbi : index fontcm22b.xcl
+build fontcm22i.pbi : index fontcm22i.xcl
+build fontcm24.pbi : index fontcm24.xcl
+build fontcm24b.pbi : index fontcm24b.xcl
+build fontcm24i.pbi : index fontcm24i.xcl
+build fontcm26.pbi : index fontcm26.xcl
+build fontcm26b.pbi : index fontcm26b.xcl
+build fontcm26i.pbi : index fontcm26i.xcl
+build fontcm28.pbi : index fontcm28.xcl
+build fontcm28b.pbi : index fontcm28b.xcl
+build fontcm28i.pbi : index fontcm28i.xcl
+build fontcm30.pbi : index fontcm30.xcl
+build fontcm30b.pbi : index fontcm30b.xcl
+build fontcm30i.pbi : index fontcm30i.xcl
+build fontcm32.pbi : index fontcm32.xcl
+build fontcm32b.pbi : index fontcm32b.xcl
+build fontcm32i.pbi : index fontcm32i.xcl
+build fontcm34.pbi : index fontcm34.xcl
+build fontcm34b.pbi : index fontcm34b.xcl
+build fontcm34i.pbi : index fontcm34i.xcl
+build fontcm36.pbi : index fontcm36.xcl
+build fontcm36b.pbi : index fontcm36b.xcl
+build fontcm36i.pbi : index fontcm36i.xcl
+build fontcm38.pbi : index fontcm38.xcl
+build fontcm38b.pbi : index fontcm38b.xcl
+build fontcm38i.pbi : index fontcm38i.xcl
+build fontcm40.pbi : index fontcm40.xcl
+build fontcm40b.pbi : index fontcm40b.xcl
+build fontcm40i.pbi : index fontcm40i.xcl
+build fontcm42.pbi : index fontcm42.xcl
+build fontcm42b.pbi : index fontcm42b.xcl
+build fontcm42i.pbi : index fontcm42i.xcl
+build fontcm44.pbi : index fontcm44.xcl
+build fontcm44b.pbi : index fontcm44b.xcl
+build fontcm44i.pbi : index fontcm44i.xcl
+build fontcm46.pbi : index fontcm46.xcl
+build fontcm46b.pbi : index fontcm46b.xcl
+build fontcm46i.pbi : index fontcm46i.xcl
+build fontcm48.pbi : index fontcm48.xcl
+build fontcm48b.pbi : index fontcm48b.xcl
+build fontcm48i.pbi : index fontcm48i.xcl
+build fontcmsc12.pbi : index fontcmsc12.xcl
+build fontcmsc14.pbi : index fontcmsc14.xcl
+build fontcmsc16.pbi : index fontcmsc16.xcl
+build fontcmsc18.pbi : index fontcmsc18.xcl
+build fontcmsc20.pbi : index fontcmsc20.xcl
+build fontcmsc22.pbi : index fontcmsc22.xcl
+build fontcmsc24.pbi : index fontcmsc24.xcl
+build fontcmsc26.pbi : index fontcmsc26.xcl
+build fontcmsc28.pbi : index fontcmsc28.xcl
+build fontcmsc30.pbi : index fontcmsc30.xcl
+build fontcmsc32.pbi : index fontcmsc32.xcl
+build fontcmsc34.pbi : index fontcmsc34.xcl
+build fontcmsc36.pbi : index fontcmsc36.xcl
+build fontcmsc38.pbi : index fontcmsc38.xcl
+build fontcmsc40.pbi : index fontcmsc40.xcl
+build fontcmsc42.pbi : index fontcmsc42.xcl
+build fontcmsc44.pbi : index fontcmsc44.xcl
+build fontcmsc46.pbi : index fontcmsc46.xcl
+build fontcmsc48.pbi : index fontcmsc48.xcl
+build fontcmss12.pbi : index fontcmss12.xcl
+build fontcmss12b.pbi : index fontcmss12b.xcl
+build fontcmss12i.pbi : index fontcmss12i.xcl
+build fontcmss14.pbi : index fontcmss14.xcl
+build fontcmss14b.pbi : index fontcmss14b.xcl
+build fontcmss14i.pbi : index fontcmss14i.xcl
+build fontcmss16.pbi : index fontcmss16.xcl
+build fontcmss16b.pbi : index fontcmss16b.xcl
+build fontcmss16i.pbi : index fontcmss16i.xcl
+build fontcmss18.pbi : index fontcmss18.xcl
+build fontcmss18b.pbi : index fontcmss18b.xcl
+build fontcmss18i.pbi : index fontcmss18i.xcl
+build fontcmss20.pbi : index fontcmss20.xcl
+build fontcmss20b.pbi : index fontcmss20b.xcl
+build fontcmss20i.pbi : index fontcmss20i.xcl
+build fontcmss22.pbi : index fontcmss22.xcl
+build fontcmss22b.pbi : index fontcmss22b.xcl
+build fontcmss22i.pbi : index fontcmss22i.xcl
+build fontcmss24.pbi : index fontcmss24.xcl
+build fontcmss24b.pbi : index fontcmss24b.xcl
+build fontcmss24i.pbi : index fontcmss24i.xcl
+build fontcmss26.pbi : index fontcmss26.xcl
+build fontcmss26b.pbi : index fontcmss26b.xcl
+build fontcmss26i.pbi : index fontcmss26i.xcl
+build fontcmss28.pbi : index fontcmss28.xcl
+build fontcmss28b.pbi : index fontcmss28b.xcl
+build fontcmss28i.pbi : index fontcmss28i.xcl
+build fontcmss30.pbi : index fontcmss30.xcl
+build fontcmss30b.pbi : index fontcmss30b.xcl
+build fontcmss30i.pbi : index fontcmss30i.xcl
+build fontcmss32.pbi : index fontcmss32.xcl
+build fontcmss32b.pbi : index fontcmss32b.xcl
+build fontcmss32i.pbi : index fontcmss32i.xcl
+build fontcmss34.pbi : index fontcmss34.xcl
+build fontcmss34b.pbi : index fontcmss34b.xcl
+build fontcmss34i.pbi : index fontcmss34i.xcl
+build fontcmss36.pbi : index fontcmss36.xcl
+build fontcmss36b.pbi : index fontcmss36b.xcl
+build fontcmss36i.pbi : index fontcmss36i.xcl
+build fontcmss38.pbi : index fontcmss38.xcl
+build fontcmss38b.pbi : index fontcmss38b.xcl
+build fontcmss38i.pbi : index fontcmss38i.xcl
+build fontcmss40.pbi : index fontcmss40.xcl
+build fontcmss40b.pbi : index fontcmss40b.xcl
+build fontcmss40i.pbi : index fontcmss40i.xcl
+build fontcmss42.pbi : index fontcmss42.xcl
+build fontcmss42b.pbi : index fontcmss42b.xcl
+build fontcmss42i.pbi : index fontcmss42i.xcl
+build fontcmss44.pbi : index fontcmss44.xcl
+build fontcmss44b.pbi : index fontcmss44b.xcl
+build fontcmss44i.pbi : index fontcmss44i.xcl
+build fontcmss46.pbi : index fontcmss46.xcl
+build fontcmss46b.pbi : index fontcmss46b.xcl
+build fontcmss46i.pbi : index fontcmss46i.xcl
+build fontcmss48.pbi : index fontcmss48.xcl
+build fontcmss48b.pbi : index fontcmss48b.xcl
+build fontcmss48i.pbi : index fontcmss48i.xcl
+build fontcmtt12.pbi : index fontcmtt12.xcl
+build fontcmtt14.pbi : index fontcmtt14.xcl
+build fontcmtt16.pbi : index fontcmtt16.xcl
+build fontcmtt18.pbi : index fontcmtt18.xcl
+build fontcmtt20.pbi : index fontcmtt20.xcl
+build fontcmtt22.pbi : index fontcmtt22.xcl
+build fontcmtt24.pbi : index fontcmtt24.xcl
+build fontcmtt26.pbi : index fontcmtt26.xcl
+build fontcmtt28.pbi : index fontcmtt28.xcl
+build fontcmtt30.pbi : index fontcmtt30.xcl
+build fontcmtt32.pbi : index fontcmtt32.xcl
+build fontcmtt34.pbi : index fontcmtt34.xcl
+build fontcmtt36.pbi : index fontcmtt36.xcl
+build fontcmtt38.pbi : index fontcmtt38.xcl
+build fontcmtt40.pbi : index fontcmtt40.xcl
+build fontcmtt42.pbi : index fontcmtt42.xcl
+build fontcmtt44.pbi : index fontcmtt44.xcl
+build fontcmtt46.pbi : index fontcmtt46.xcl
+build fontcmtt48.pbi : index fontcmtt48.xcl
+build fontfixed6x8.pbi : index fontfixed6x8.xcl
+build image.pbi : index image.xcl
+build imgbutton.pbi : index imgbutton.xcl
+build keyboard.pbi : index keyboard.xcl
+build line.pbi : index line.xcl
+build listbox.pbi : index listbox.xcl
+build offscr1bpp.pbi : index offscr1bpp.xcl
+build offscr4bpp.pbi : index offscr4bpp.xcl
+build offscr8bpp.pbi : index offscr8bpp.xcl
+build pushbutton.pbi : index pushbutton.xcl
+build radiobutton.pbi : index radiobutton.xcl
+build rectangle.pbi : index rectangle.xcl
+build slider.pbi : index slider.xcl
+build string.pbi : index string.xcl
+build widget.pbi : index widget.xcl
+build grlib_part0.pbi : link canvas.pbi charmap.pbi checkbox.pbi circle.pbi container.pbi context.pbi fontcm12.pbi fontcm12b.pbi fontcm12i.pbi fontcm14.pbi fontcm14b.pbi fontcm14i.pbi fontcm16.pbi
+build grlib_part1.pbi : link fontcm16b.pbi fontcm16i.pbi fontcm18.pbi fontcm18b.pbi fontcm18i.pbi fontcm20.pbi fontcm20b.pbi fontcm20i.pbi fontcm22.pbi fontcm22b.pbi fontcm22i.pbi fontcm24.pbi fontcm24b.pbi
+build grlib_part2.pbi : link fontcm24i.pbi fontcm26.pbi fontcm26b.pbi fontcm26i.pbi fontcm28.pbi fontcm28b.pbi fontcm28i.pbi fontcm30.pbi fontcm30b.pbi fontcm30i.pbi fontcm32.pbi fontcm32b.pbi fontcm32i.pbi
+build grlib_part3.pbi : link fontcm34.pbi fontcm34b.pbi fontcm34i.pbi fontcm36.pbi fontcm36b.pbi fontcm36i.pbi fontcm38.pbi fontcm38b.pbi fontcm38i.pbi fontcm40.pbi fontcm40b.pbi fontcm40i.pbi fontcm42.pbi
+build grlib_part4.pbi : link fontcm42b.pbi fontcm42i.pbi fontcm44.pbi fontcm44b.pbi fontcm44i.pbi fontcm46.pbi fontcm46b.pbi fontcm46i.pbi fontcm48.pbi fontcm48b.pbi fontcm48i.pbi fontcmsc12.pbi fontcmsc14.pbi
+build grlib_part5.pbi : link fontcmsc16.pbi fontcmsc18.pbi fontcmsc20.pbi fontcmsc22.pbi fontcmsc24.pbi fontcmsc26.pbi fontcmsc28.pbi fontcmsc30.pbi fontcmsc32.pbi fontcmsc34.pbi fontcmsc36.pbi fontcmsc38.pbi fontcmsc40.pbi
+build grlib_part6.pbi : link fontcmsc42.pbi fontcmsc44.pbi fontcmsc46.pbi fontcmsc48.pbi fontcmss12.pbi fontcmss12b.pbi fontcmss12i.pbi fontcmss14.pbi fontcmss14b.pbi fontcmss14i.pbi fontcmss16.pbi fontcmss16b.pbi fontcmss16i.pbi
+build grlib_part7.pbi : link fontcmss18.pbi fontcmss18b.pbi fontcmss18i.pbi fontcmss20.pbi fontcmss20b.pbi fontcmss20i.pbi fontcmss22.pbi fontcmss22b.pbi fontcmss22i.pbi fontcmss24.pbi fontcmss24b.pbi fontcmss24i.pbi fontcmss26.pbi
+build grlib_part8.pbi : link fontcmss26b.pbi fontcmss26i.pbi fontcmss28.pbi fontcmss28b.pbi fontcmss28i.pbi fontcmss30.pbi fontcmss30b.pbi fontcmss30i.pbi fontcmss32.pbi fontcmss32b.pbi fontcmss32i.pbi fontcmss34.pbi fontcmss34b.pbi
+build grlib_part9.pbi : link fontcmss34i.pbi fontcmss36.pbi fontcmss36b.pbi fontcmss36i.pbi fontcmss38.pbi fontcmss38b.pbi fontcmss38i.pbi fontcmss40.pbi fontcmss40b.pbi fontcmss40i.pbi fontcmss42.pbi fontcmss42b.pbi fontcmss42i.pbi
+build grlib_part10.pbi : link fontcmss44.pbi fontcmss44b.pbi fontcmss44i.pbi fontcmss46.pbi fontcmss46b.pbi fontcmss46i.pbi fontcmss48.pbi fontcmss48b.pbi fontcmss48i.pbi fontcmtt12.pbi fontcmtt14.pbi fontcmtt16.pbi fontcmtt18.pbi
+build grlib_part11.pbi : link fontcmtt20.pbi fontcmtt22.pbi fontcmtt24.pbi fontcmtt26.pbi fontcmtt28.pbi fontcmtt30.pbi fontcmtt32.pbi fontcmtt34.pbi fontcmtt36.pbi fontcmtt38.pbi fontcmtt40.pbi fontcmtt42.pbi fontcmtt44.pbi
+build grlib_part12.pbi : link fontcmtt46.pbi fontcmtt48.pbi fontfixed6x8.pbi image.pbi imgbutton.pbi keyboard.pbi line.pbi listbox.pbi offscr1bpp.pbi offscr4bpp.pbi offscr8bpp.pbi pushbutton.pbi radiobutton.pbi
+build grlib_part13.pbi : link rectangle.pbi slider.pbi string.pbi widget.pbi
+build grlib.pbd : link grlib_part0.pbi grlib_part1.pbi grlib_part2.pbi grlib_part3.pbi grlib_part4.pbi grlib_part5.pbi grlib_part6.pbi grlib_part7.pbi grlib_part8.pbi grlib_part9.pbi grlib_part10.pbi grlib_part11.pbi grlib_part12.pbi grlib_part13.pbi
+build grlib.pbw : browsedata grlib.pbd
+
+

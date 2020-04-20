@@ -20,9 +20,10 @@ rule browsedata
 
 
 #Build steps
+build cfaf128x128x16.pbi : index cfaf128x128x16.xcl
 build main.pbi : index main.xcl
 build system_TM4C1294_TW.pbi : index system_TM4C1294_TW.xcl
-build lab1.pbd : link main.pbi system_TM4C1294_TW.pbi
+build lab1.pbd : link cfaf128x128x16.pbi main.pbi system_TM4C1294_TW.pbi
 build lab1.pbw : browsedata lab1.pbd
 
 

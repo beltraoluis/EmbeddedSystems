@@ -1,16 +1,20 @@
-"C:\Users\beltraoluis\Documents\git\EmbeddedSystems\projects\lab1\main.c"
+"C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Users\beltraoluis\Documents\git\EmbeddedSystems\projects\lab1\Debug\Obj\main.pbi.dep
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\beltraoluis\Documents\git\EmbeddedSystems\projects\lab1
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1
 -I
-C:\Users\beltraoluis\Documents\git\EmbeddedSystems\projects\lab1\..\..\TivaWare_C_Series-2.1.4.178
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\..\..\TivaWare_C_Series-2.1.4.178
+-I
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\..\drivers
+-I
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\src
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
@@ -20,7 +24,11 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\beltraoluis\Documents\git\EmbeddedSystems\TivaWare_C_Series-2.1.4.178
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\TivaWare_C_Series-2.1.4.178
+-I
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\drivers
+-I
+C:\Users\beltr\OneDrive\Área de Trabalho\EmbeddedSystems\git\EmbeddedSystems\projects\lab1\src
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
@@ -317,6 +325,8 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
+-D__FPU_USED=1
+-DPART_TM4C1294NCPDT=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Normal.h"
 -D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Config_Normal.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V8.50.1.245/W32 for ARM"
